@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "SXceiver High Linearity Amplifier up to 2W")
-		(date "2026-03-15")
-		(rev "V1.0")
+		(date "2026-03-21")
+		(rev "V1.1")
 		(company "Z32IT")
 	)
 	(lib_symbols
@@ -1605,221 +1605,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RF_Filter:LFCN-490"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "FL"
-				(at 0 10.795 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LFCN-490"
-				(at 0 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Filter:Filter_Mini-Circuits_FV1206"
-				(at 0 12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.minicircuits.com/pdfs/LFCN-490+.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "490MHz 50 Ohm Passive Low Pass Filter, FV1206"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Mini-Circuits low pass filter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Filter*Mini?Circuits*FV1206*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LFCN-490_0_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(arc
-					(start -3.81 2.54)
-					(mid -1.905 3.5595)
-					(end 0 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -1.27)
-					(mid -1.905 -0.2505)
-					(end 0 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy 1.27 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 2.54)
-					(mid 1.905 1.5205)
-					(end 0 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -1.27)
-					(mid 1.905 -2.2895)
-					(end 0 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LFCN-490_1_1"
-				(pin passive line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "TQP7M9106_1"
 			(pin_names
 				(offset 1.016)
@@ -2922,16 +2707,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 114.3) (xy 229.87 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d085965-c04f-498a-819c-d0706ca4dca5")
-	)
-	(wire
-		(pts
 			(xy 124.46 53.34) (xy 139.7 53.34)
 		)
 		(stroke
@@ -3152,7 +2927,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 114.3) (xy 254 114.3)
+			(xy 224.79 114.3) (xy 228.6 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3172,7 +2947,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 119.38) (xy 259.08 123.19)
+			(xy 233.68 119.38) (xy 233.68 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3409,16 +3184,6 @@
 			(type default)
 		)
 		(uuid "e1631eca-d464-4574-ae20-ffdc198fceb8")
-	)
-	(wire
-		(pts
-			(xy 240.03 124.46) (xy 240.03 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e252583d-b552-4e9b-a509-30809f3005ba")
 	)
 	(wire
 		(pts
@@ -5478,72 +5243,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_4ms_Power-symbol:GND")
-		(at 240.03 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85bccde8-9fc2-48d4-8e99-9380de1a3658")
-		(property "Reference" "#PWR013"
-			(at 240.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 240.03 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 240.03 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 240.03 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56cf4a59-f486-4a66-a1e0-a4a700dc3805")
-		)
-		(instances
-			(project "LNA-2W"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 129.54 68.58 0)
 		(unit 1)
@@ -5604,80 +5303,6 @@
 			(project "PA-2W for sxceiver"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RF_Filter:LFCN-490")
-		(at 240.03 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a6a02a8-1677-4ec4-868c-61ca3218f6c8")
-		(property "Reference" "FL1"
-			(at 240.03 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LFCN-490"
-			(at 240.03 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Filter:Filter_Mini-Circuits_FV1206"
-			(at 240.03 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/LFCN-490+.pdf"
-			(at 240.03 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "490MHz 50 Ohm Passive Low Pass Filter, FV1206"
-			(at 240.03 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25e92737-ae48-48d5-9529-0b984e16ede3")
-		)
-		(pin "2"
-			(uuid "f4253071-a7e0-478f-91f6-15aff2b60dc6")
-		)
-		(pin "3"
-			(uuid "64329a27-a564-44b6-9c06-931dca106709")
-		)
-		(pin "4"
-			(uuid "2bf8b9eb-c734-4f26-ae0b-b30967afc664")
-		)
-		(instances
-			(project ""
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "FL1")
 					(unit 1)
 				)
 			)
@@ -6151,7 +5776,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 259.08 114.3 0)
+		(at 233.68 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6160,7 +5785,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2de168e-cca4-43e0-9fd9-81c59733a0ae")
 		(property "Reference" "J2"
-			(at 262.89 113.3231 0)
+			(at 237.49 113.3231 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6169,7 +5794,7 @@
 			)
 		)
 		(property "Value" "SMA_RF OUT"
-			(at 262.89 115.8631 0)
+			(at 237.49 115.8631 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6178,7 +5803,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Connector:SMA_Edge_6.3mm"
-			(at 259.08 114.3 0)
+			(at 233.68 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6187,7 +5812,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 259.08 114.3 0)
+			(at 233.68 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6196,7 +5821,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 259.08 114.3 0)
+			(at 233.68 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6849,7 +6474,7 @@
 	)
 	(symbol
 		(lib_id "PCM_4ms_Power-symbol:GND")
-		(at 259.08 123.19 0)
+		(at 233.68 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6858,7 +6483,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5c62360-7cf0-46cc-acab-cf7d0de9cf1f")
 		(property "Reference" "#PWR04"
-			(at 259.08 129.54 0)
+			(at 233.68 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6867,7 +6492,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.08 128.27 0)
+			(at 233.68 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6875,7 +6500,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 123.19 0)
+			(at 233.68 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6884,7 +6509,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 123.19 0)
+			(at 233.68 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6893,7 +6518,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 259.08 123.19 0)
+			(at 233.68 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
