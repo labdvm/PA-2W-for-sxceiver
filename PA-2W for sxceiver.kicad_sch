@@ -5,9 +5,9 @@
 	(uuid "9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a")
 	(paper "A4")
 	(title_block
-		(title "SXceiver High Linearity Amplifier up to 2W")
-		(date "2026-03-21")
-		(rev "V1.1")
+		(title "SXceiver Linear Amplifier up to 2W")
+		(date "2026-03-25")
+		(rev "V1.2")
 		(company "Z32IT")
 	)
 	(lib_symbols
@@ -656,168 +656,6 @@
 					(at 0 -2.54 90)
 					(length 2.032)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:L"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1757,6 +1595,221 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RF_Filter:LFCN-490"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FL"
+				(at 0 10.795 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LFCN-490"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Filter:Filter_Mini-Circuits_FV1206"
+				(at 0 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.minicircuits.com/pdfs/LFCN-490+.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "490MHz 50 Ohm Passive Low Pass Filter, FV1206"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Mini-Circuits low pass filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Filter*Mini?Circuits*FV1206*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LFCN-490_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(arc
+					(start -3.81 2.54)
+					(mid -1.905 3.5595)
+					(end 0 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.81 -1.27)
+					(mid -1.905 -0.2505)
+					(end 0 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 1.27 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.81 2.54)
+					(mid 1.905 1.5205)
+					(end 0 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.81 -1.27)
+					(mid 1.905 -2.2895)
+					(end 0 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LFCN-490_1_1"
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2975,12 +3028,6 @@
 		)
 	)
 	(junction
-		(at 203.2 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "02ab9d31-c4dd-4c17-88db-23b2c48e1cfd")
-	)
-	(junction
 		(at 198.12 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2999,22 +3046,10 @@
 		(uuid "18d46532-c738-4c0b-b1a3-7f4f25755bac")
 	)
 	(junction
-		(at 198.12 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2ae3adce-72a8-43f2-b6e1-389f95c2ab03")
-	)
-	(junction
 		(at 181.61 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b817cfa-8d63-4182-81b2-c778c93680e6")
-	)
-	(junction
-		(at 85.09 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f55b021-9c9a-4f53-9507-750038c41f95")
 	)
 	(junction
 		(at 90.17 67.31)
@@ -3041,6 +3076,30 @@
 		(uuid "50b350da-8ef2-4ffb-ba84-07632c0ce2b7")
 	)
 	(junction
+		(at 90.17 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62d4c9ac-735d-4f07-a90a-d923f9d574e8")
+	)
+	(junction
+		(at 198.12 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6741768a-8c39-4e3d-8067-cee40da068d7")
+	)
+	(junction
+		(at 203.2 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ad93288-da7c-4a7a-9aa9-1b912f1ea568")
+	)
+	(junction
+		(at 76.2 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ae4c56e-c372-4238-be07-5ef4844a8f6e")
+	)
+	(junction
 		(at 134.62 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3051,6 +3110,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "828c92a6-3953-40f0-a48d-dd5252622941")
+	)
+	(junction
+		(at 85.09 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8431997e-dd1d-4156-b99b-a0e2fec82991")
 	)
 	(junction
 		(at 139.7 93.98)
@@ -3107,22 +3172,10 @@
 		(uuid "c9bf44f7-b1ab-478f-bab8-bc75d2fd149f")
 	)
 	(junction
-		(at 74.93 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ca5d311e-d18b-4f89-91f3-d635436340a6")
-	)
-	(junction
 		(at 90.17 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d7cf7852-9b42-4d80-831a-84facfa4b314")
-	)
-	(junction
-		(at 90.17 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dcf91fba-5b8b-4d4e-89bc-a47aa16de6f6")
 	)
 	(junction
 		(at 90.17 115.57)
@@ -3168,6 +3221,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 63.5) (xy 76.2 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04387bd3-333b-41eb-a105-a0cb8a214b29")
+	)
+	(wire
+		(pts
 			(xy 105.41 119.38) (xy 106.68 119.38)
 		)
 		(stroke
@@ -3175,16 +3238,6 @@
 			(type default)
 		)
 		(uuid "066db8a8-3621-4648-8859-b49f500731e6")
-	)
-	(wire
-		(pts
-			(xy 80.01 71.12) (xy 80.01 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0abfba01-8a09-438f-badd-5f4f74665937")
 	)
 	(wire
 		(pts
@@ -3208,16 +3261,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 67.31) (xy 81.28 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1348910d-7ba3-48ac-ba15-0f361cc0b0fa")
-	)
-	(wire
-		(pts
 			(xy 90.17 115.57) (xy 93.98 115.57)
 		)
 		(stroke
@@ -3225,6 +3268,16 @@
 			(type default)
 		)
 		(uuid "135a2111-4a3e-435e-8900-1c54a05553d2")
+	)
+	(wire
+		(pts
+			(xy 224.79 114.3) (xy 229.87 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16a39993-ba3c-4f4f-bd30-d6f0afbf43ab")
 	)
 	(wire
 		(pts
@@ -3308,6 +3361,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 55.88) (xy 76.2 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f2f27a5-0b99-4f48-8b4e-2e6bc1092a38")
+	)
+	(wire
+		(pts
 			(xy 90.17 67.31) (xy 90.17 73.66)
 		)
 		(stroke
@@ -3338,16 +3401,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 67.31) (xy 90.17 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "365e34fe-c0f5-47b7-812c-316aa76880f1")
-	)
-	(wire
-		(pts
 			(xy 83.82 104.14) (xy 83.82 107.95)
 		)
 		(stroke
@@ -3358,7 +3411,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 55.88) (xy 90.17 55.88)
+			(xy 68.58 55.88) (xy 76.2 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3378,16 +3431,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 91.44) (xy 90.17 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4078af85-2528-4d1d-b24d-29f950286fc4")
-	)
-	(wire
-		(pts
 			(xy 105.41 111.76) (xy 106.68 111.76)
 		)
 		(stroke
@@ -3395,6 +3438,16 @@
 			(type default)
 		)
 		(uuid "41abbe4e-3360-455c-98e9-5a7fb36d0595")
+	)
+	(wire
+		(pts
+			(xy 203.2 82.55) (xy 203.2 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "425bf48d-9f55-4e5b-9f7f-8f0dadddcf47")
 	)
 	(wire
 		(pts
@@ -3408,13 +3461,13 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 82.55) (xy 198.12 96.52)
+			(xy 76.2 55.88) (xy 90.17 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "49104fb0-dc82-4dfe-b8de-6155d557850c")
+		(uuid "499784ff-5aa2-4292-8e53-9b959a4c887e")
 	)
 	(wire
 		(pts
@@ -3568,6 +3621,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 114.3) (xy 255.27 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7be83f6a-99d6-481c-9d20-762e1548b367")
+	)
+	(wire
+		(pts
 			(xy 181.61 123.19) (xy 181.61 125.73)
 		)
 		(stroke
@@ -3628,16 +3691,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 114.3) (xy 228.6 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dc842a6-540e-4cb0-a25a-cd556e6e96e0")
-	)
-	(wire
-		(pts
 			(xy 118.11 118.11) (xy 118.11 115.57)
 		)
 		(stroke
@@ -3658,7 +3711,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 119.38) (xy 233.68 123.19)
+			(xy 260.35 119.38) (xy 260.35 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3695,6 +3748,16 @@
 			(type default)
 		)
 		(uuid "a329f2b1-018b-4284-851a-fa77fce4e12c")
+	)
+	(wire
+		(pts
+			(xy 90.17 91.44) (xy 90.17 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a49b3ea2-cdae-4f83-956e-098b374691c8")
 	)
 	(wire
 		(pts
@@ -3808,26 +3871,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 82.55) (xy 203.2 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf8c4140-1cca-4488-bb83-6cde3b23d71f")
-	)
-	(wire
-		(pts
-			(xy 74.93 60.96) (xy 74.93 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c443f675-b0cd-4e18-9266-53489dfe8d56")
-	)
-	(wire
-		(pts
 			(xy 140.97 120.65) (xy 139.7 120.65)
 		)
 		(stroke
@@ -3908,13 +3951,23 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 55.88) (xy 74.93 55.88)
+			(xy 198.12 82.55) (xy 198.12 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1ffa43b-d815-4790-b657-e344b55a7383")
+		(uuid "eb302e61-b8b1-42a1-9c9e-d515ed34fa40")
+	)
+	(wire
+		(pts
+			(xy 240.03 124.46) (xy 240.03 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed7eef6e-2e8c-40cd-bacb-ccafab60c12d")
 	)
 	(wire
 		(pts
@@ -3948,13 +4001,13 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 106.68) (xy 90.17 115.57)
+			(xy 90.17 105.41) (xy 90.17 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fade40cc-5613-4546-a6c0-67f6455176c9")
+		(uuid "fbc2c6c2-2866-4727-84bb-f02674c709fc")
 	)
 	(label "RF_OUT{slash}VCC"
 		(at 181.61 116.84 0)
@@ -4005,76 +4058,6 @@
 			(justify left bottom)
 		)
 		(uuid "dd002479-8dd6-46b9-864a-b882a203f721")
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 181.61 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0527f15e-8eb8-4843-918d-4c7902b4ea39")
-		(property "Reference" "R4"
-			(at 184.15 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "280R"
-			(at 184.15 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 181.61 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 181.61 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc5f6272-e7ad-45f7-b34a-dd9dccc5b400")
-		)
-		(pin "2"
-			(uuid "30e75bb0-8c9c-4d3f-bed3-a9679767683c")
-		)
-		(instances
-			(project "LNA-2W"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "PCM_4ms_Power-symbol:GND")
@@ -4144,6 +4127,72 @@
 	)
 	(symbol
 		(lib_id "PCM_4ms_Power-symbol:GND")
+		(at 240.03 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05e80ce3-ee1b-4615-926b-e2849169024f")
+		(property "Reference" "#PWR013"
+			(at 240.03 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3716c2dc-bd16-4caa-8fc4-b4b8295a429f")
+		)
+		(instances
+			(project "PA-2W for sxceiver"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_4ms_Power-symbol:GND")
 		(at 39.37 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4204,6 +4253,101 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 87.63 91.44 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0afa4857-c180-4876-b214-75f13476762b")
+		(property "Reference" "C2"
+			(at 87.6236 97.1464 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100p"
+			(at 87.6236 94.7222 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 87.63 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 87.63 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603FRNPO9BN101"
+			(at 87.63 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3599-1-ND"
+			(at 87.63 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbe9d9ce-b69b-4f09-a18b-2065696c4aa0")
+		)
+		(pin "2"
+			(uuid "29680d8a-0f4b-48f5-91f0-aa342258b785")
+		)
+		(instances
+			(project "PA-2W for sxceiver"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4343,73 +4487,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 109.22 119.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "10edf31b-b717-4ff0-917f-cf8718d536c5")
-		(property "Reference" "C5"
-			(at 109.22 124.714 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100p"
-			(at 109.22 122.428 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 109.22 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 109.22 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24d8735c-d45a-4c11-9bf9-96ab0a2e52a3")
-		)
-		(pin "2"
-			(uuid "0a1dbf07-7086-4836-8640-f029ad035596")
-		)
-		(instances
-			(project ""
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_4ms_Power-symbol:GND")
 		(at 127 93.98 270)
 		(unit 1)
@@ -4543,6 +4620,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 181.61 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f563271-9c85-47ca-9905-ff910fd34b81")
+		(property "Reference" "R4"
+			(at 184.15 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "280R"
+			(at 184.15 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CRCW0603280RFKEA"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-280HCT-ND"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42053ef8-ff2c-4cb2-b191-327ef8417d68")
+		)
+		(pin "2"
+			(uuid "ac2f9a0d-63a6-4b46-91f1-90c4a2520587")
+		)
+		(instances
+			(project "PA-2W for sxceiver"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 246.38 20.32 0)
 		(unit 1)
@@ -4661,6 +4835,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 139.7 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CRCW0603280RFKEA"
+			(at 139.7 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-280HCT-ND"
+			(at 139.7 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4b285fa3-ba48-404b-8a5b-dc4a23770f6c")
 		)
@@ -4723,6 +4924,42 @@
 			)
 		)
 		(property "Description" "Inductor, small symbol"
+			(at 198.12 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Q min" "62 @ 350 MHz"
+			(at 198.12 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Abracon LLC"
+			(at 198.12 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "AISC-1008HQ-18NG-T"
+			(at 198.12 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "535-AISC-1008HQ-18NG-TTR-ND"
 			(at 198.12 105.41 0)
 			(effects
 				(font
@@ -4996,6 +5233,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 222.25 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603FRNPO9BN220"
+			(at 222.25 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3350-1-ND"
+			(at 222.25 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7ac2c68-1f83-46a2-bebe-d9675882b1ea")
 		)
@@ -5006,73 +5270,6 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 176.53 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "46223d63-37ed-47a4-b6dc-08508c2e81ee")
-		(property "Reference" "C9"
-			(at 176.53 105.664 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100p"
-			(at 176.53 103.378 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 176.53 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 176.53 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 176.53 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93874655-2858-4a96-9782-87bf9ab30ea9")
-		)
-		(pin "2"
-			(uuid "ebe6e383-2540-4d13-9c66-edd3a85a183c")
-		)
-		(instances
-			(project "LNA-2W"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -5195,6 +5392,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 109.22 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CRCW060351R0FKEA"
+			(at 109.22 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-51.0HCT-ND"
+			(at 109.22 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cf780a7f-8ab9-4eb1-bb9c-56e0e3e5308f")
 		)
@@ -5256,6 +5480,33 @@
 		)
 		(property "Description" "Inductor, small symbol"
 			(at 205.74 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 205.74 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "LQW18AS4N7J00D"
+			(at 205.74 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "490-LQW18AS4N7J00DCT-ND"
+			(at 205.74 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5332,133 +5583,30 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Qorvo"
+		(property "Manufacturer" "Qorvo"
 			(at 73.66 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.95mm"
+		(property "Manufacturer Product Number" "TQP3M9036"
 			(at 73.66 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Package" "DFN-8 Qorvo"
+		(property "DigiKey Part Number" "2312-TQP3M9036CT-ND"
 			(at 73.66 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/TQP3M9036/Qorvo/view-part/?ref=eda"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "N/A"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TQP3M9036/Qorvo/view-part/?ref=snap"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "TQP3M9036"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1240987&manufacturer=Qorvo&part_name=TQP3M9036&search_term=None"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "RF Amp Chip Single GP 2GHz 5.25V 8-Pin DFN EP T/R"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Qorvo"
-			(at 73.66 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
@@ -5494,7 +5642,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small")
-		(at 83.82 67.31 270)
+		(at 76.2 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5503,23 +5651,25 @@
 		(fields_autoplaced yes)
 		(uuid "5b971b0f-8939-4f4a-87f1-f30e6b78894b")
 		(property "Reference" "C18"
-			(at 84.3661 60.96 90)
+			(at 78.74 59.1438 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "22u"
-			(at 84.3661 63.5 90)
+		(property "Value" "47u"
+			(at 78.74 61.6838 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C"
-			(at 83.82 67.31 0)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H_HandSolder"
+			(at 76.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5528,7 +5678,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 67.31 0)
+			(at 76.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5537,7 +5687,34 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
-			(at 83.82 67.31 0)
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "TAJC476K016RNJ"
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "478-1718-1-ND"
+			(at 76.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5615,133 +5792,30 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Qorvo"
-			(at 160.782 104.394 0)
+		(property "Manufacturer" "Qorvo"
+			(at 161.29 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.9 mm"
-			(at 160.782 94.742 0)
+		(property "Manufacturer Product Number" "TQP7M9106"
+			(at 161.29 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Package" "QFN-24 Qorvo"
-			(at 160.274 96.774 0)
+		(property "DigiKey Part Number" "2312-TQP7M9106CT-ND"
+			(at 161.29 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 161.29 105.918 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/TQP7M9106/Qorvo/view-part/?ref=eda"
-			(at 158.75 90.678 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 161.036 92.202 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "Rev.D"
-			(at 127 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TQP7M9106/Qorvo/view-part/?ref=snap"
-			(at 147.574 95.504 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "TQP7M9106"
-			(at 159.258 102.616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "RF Amplifier IC CDMA, LTE, W-CDMA 50MHz ~ 1.5GHz 24-QFN (4x4)"
-			(at 158.75 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Qorvo"
-			(at 135.382 107.696 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 135.128 105.664 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" "TQP7M9106"
-			(at 135.382 103.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
@@ -5884,6 +5958,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 213.36 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603BRNPO9BN6R8"
+			(at 213.36 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3838-1-ND"
+			(at 213.36 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cc82e6e1-6c14-4ccc-a5ae-3530892371f5")
 		)
@@ -5894,6 +5995,107 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RF_Filter:LFCN-490")
+		(at 240.03 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "675884a6-c2e2-4098-b1da-edd008bcb499")
+		(property "Reference" "FL1"
+			(at 240.03 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LFCN-490"
+			(at 240.03 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Filter:Filter_Mini-Circuits_FV1206"
+			(at 240.03 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/LFCN-490+.pdf"
+			(at 240.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "490MHz 50 Ohm Passive Low Pass Filter, FV1206"
+			(at 240.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Mini-Circuits"
+			(at 240.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "LFCN-490+"
+			(at 240.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "3157-LFCN-490+CT-ND"
+			(at 240.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f11f422-f5c8-4307-a399-cf76ff830a2b")
+		)
+		(pin "2"
+			(uuid "09a5f24a-ed02-490b-b761-6dab6eaf26b3")
+		)
+		(pin "4"
+			(uuid "6fa05670-ff6f-4824-9ebc-37ee193468fd")
+		)
+		(pin "3"
+			(uuid "a9ab58c4-abd0-4e2c-898f-f506551bed3f")
+		)
+		(instances
+			(project ""
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "FL1")
 					(unit 1)
 				)
 			)
@@ -5952,8 +6154,8 @@
 				(hide yes)
 			)
 		)
-		(property "PN" ""
-			(at 92.71 67.31 0)
+		(property "Manufacturer" "YAGEO"
+			(at 92.71 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5961,8 +6163,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 92.71 67.31 0)
+		(property "Manufacturer Product Number" "CC0805FRNPO9BN220"
+			(at 92.71 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-4171-1-ND"
+			(at 92.71 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6103,6 +6314,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 118.11 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603BRNPO9BN8R2"
+			(at 118.11 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3347-1-ND"
+			(at 118.11 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3536d4f4-0bdc-4717-bd4f-7c2164fb015e")
 		)
@@ -6113,6 +6351,100 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 201.93 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "741bc59d-98e9-4657-8331-d4d9457ced1a")
+		(property "Reference" "C13"
+			(at 201.93 93.726 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1n"
+			(at 201.93 99.568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 201.93 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.93 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 201.93 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 201.93 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "GRM1885C1H102JA01D"
+			(at 201.93 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "490-1451-1-ND"
+			(at 201.93 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d86813b7-b33d-44d2-9bdc-54bd0a94b744")
+		)
+		(pin "2"
+			(uuid "cc7210b8-a4f3-4d6c-8450-aab5452e0d42")
+		)
+		(instances
+			(project "PA-2W for sxceiver"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -6186,15 +6518,16 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 96.52 115.57 90)
+		(at 132.08 93.98 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "79678928-64fe-43f4-9ec5-45ef8f336c76")
-		(property "Reference" "C4"
-			(at 96.52 120.904 90)
+		(uuid "8071b9c6-1709-432e-a34c-e3b9766b3071")
+		(property "Reference" "C8"
+			(at 132.0736 99.6864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6202,7 +6535,7 @@
 			)
 		)
 		(property "Value" "100p"
-			(at 96.52 118.618 90)
+			(at 132.0736 97.2622 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6210,7 +6543,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 96.52 115.57 0)
+			(at 132.08 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6219,7 +6552,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 115.57 0)
+			(at 132.08 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6227,8 +6560,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 96.52 115.57 0)
+		(property "Description" ""
+			(at 132.08 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 132.08 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603FRNPO9BN101"
+			(at 132.08 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3599-1-ND"
+			(at 132.08 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6237,15 +6597,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c7de7a32-e72b-441c-b266-54c627d244ea")
+			(uuid "efb0625c-1734-4252-a71b-b61026e58de1")
 		)
 		(pin "2"
-			(uuid "f9033b57-5fbd-43ba-bae6-1fbd912522b6")
+			(uuid "1dc2c4be-b6ba-42fa-a362-f47dada3fde7")
 		)
 		(instances
-			(project "LNA-2W"
+			(project "PA-2W for sxceiver"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "C4")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -6304,6 +6664,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 125.73 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CRCW06034R30FKEA"
+			(at 125.73 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-4.30HHCT-ND"
+			(at 125.73 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a78cb5c6-8e93-430b-8bbb-8cc5e78e38d8")
 		)
@@ -6321,7 +6708,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 71.12 0)
+		(at 76.2 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6330,7 +6717,7 @@
 		(fields_autoplaced yes)
 		(uuid "879f67ba-cdbf-499f-a040-5f017bdb36ca")
 		(property "Reference" "#PWR015"
-			(at 80.01 77.47 0)
+			(at 76.2 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6339,7 +6726,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 75.2531 0)
+			(at 76.2 70.1731 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6347,7 +6734,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 71.12 0)
+			(at 76.2 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6356,7 +6743,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 71.12 0)
+			(at 76.2 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6365,7 +6752,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 80.01 71.12 0)
+			(at 76.2 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6380,6 +6767,100 @@
 			(project "PA-2W for sxceiver"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 198.12 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b829052-641a-4004-8a93-c5a82fc3153d")
+		(property "Reference" "C10"
+			(at 192.786 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "8p2"
+			(at 195.072 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 198.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 198.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 198.12 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603BRNPO9BN8R2"
+			(at 198.12 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3347-1-ND"
+			(at 198.12 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6a362d1-e3f1-4e29-85ed-141926d09354")
+		)
+		(pin "2"
+			(uuid "a19012db-5d0c-4ee8-a992-9f5ff1a9049d")
+		)
+		(instances
+			(project "PA-2W for sxceiver"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -6444,6 +6925,101 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 109.22 119.38 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "923239c4-7238-45c2-a32e-b7f6bfc0792b")
+		(property "Reference" "C5"
+			(at 109.2136 125.0864 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100p"
+			(at 109.2136 122.6622 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 109.22 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 109.22 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603FRNPO9BN101"
+			(at 109.22 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3599-1-ND"
+			(at 109.22 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4811aa8-da2f-43f5-b498-9f57fe881103")
+		)
+		(pin "2"
+			(uuid "fb56e154-60d2-48bc-a00f-cc8f203fea18")
+		)
+		(instances
+			(project "PA-2W for sxceiver"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -6517,73 +7093,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 201.93 96.52 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "95f61fc6-be1c-4eab-a8ae-500ef90ddf13")
-		(property "Reference" "C13"
-			(at 201.93 101.854 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1n"
-			(at 201.93 99.568 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 201.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 201.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 201.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3676a4ed-f8f9-4294-81cc-f1fb845af142")
-		)
-		(pin "2"
-			(uuid "5d6e198e-38ed-42ae-b472-05dc979c984e")
-		)
-		(instances
-			(project "LNA-2W"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 200.66 73.66 90)
 		(unit 1)
@@ -6609,7 +7118,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H_HandSolder"
 			(at 200.66 73.66 0)
 			(effects
 				(font
@@ -6629,6 +7138,33 @@
 		)
 		(property "Description" "Polarized capacitor, small symbol"
 			(at 200.66 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 200.66 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "TAJB226K016RNJ"
+			(at 200.66 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "478-1682-1-ND"
+			(at 200.66 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6719,6 +7255,101 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 176.53 100.33 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1715356-d2f0-457c-9816-8d6d1646e340")
+		(property "Reference" "C9"
+			(at 176.5236 106.0364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100p"
+			(at 176.5236 103.6122 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 176.53 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 176.53 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603FRNPO9BN101"
+			(at 176.53 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3599-1-ND"
+			(at 176.53 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3410a08f-3877-42cb-88d2-7eb1fb951fd6")
+		)
+		(pin "2"
+			(uuid "995f162a-229d-411d-9499-d1e910d6c124")
+		)
+		(instances
+			(project "PA-2W for sxceiver"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 87.63 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6769,8 +7400,8 @@
 				(hide yes)
 			)
 		)
-		(property "PN" ""
-			(at 87.63 86.36 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 87.63 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6778,8 +7409,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 87.63 86.36 0)
+		(property "Manufacturer Product Number" "GRT188R61H105KE13D"
+			(at 87.63 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "490-12330-1-ND"
+			(at 87.63 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6804,15 +7444,16 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 132.08 93.98 90)
+		(at 96.52 115.57 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "aee3516c-210a-4447-9573-fd5f37770a85")
-		(property "Reference" "C8"
-			(at 132.08 99.314 90)
+		(uuid "b8fad297-c7ed-4272-9608-c746dd3908f1")
+		(property "Reference" "C4"
+			(at 96.5136 121.2764 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6820,7 +7461,7 @@
 			)
 		)
 		(property "Value" "100p"
-			(at 132.08 97.028 90)
+			(at 96.5136 118.8522 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6828,7 +7469,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 132.08 93.98 0)
+			(at 96.52 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6837,7 +7478,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 93.98 0)
+			(at 96.52 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6845,8 +7486,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 132.08 93.98 0)
+		(property "Description" ""
+			(at 96.52 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 96.52 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603FRNPO9BN101"
+			(at 96.52 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3599-1-ND"
+			(at 96.52 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6855,15 +7523,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8cc21590-0b64-46e7-855d-1689682c1684")
+			(uuid "63908ecd-4618-4c12-bcdf-f69ed1dcc664")
 		)
 		(pin "2"
-			(uuid "e367ac2e-abcd-466c-a626-e7d538c9896c")
+			(uuid "0302041b-8d42-4549-8b6b-37763f55a77d")
 		)
 		(instances
-			(project "LNA-2W"
+			(project "PA-2W for sxceiver"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "C8")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6871,15 +7539,16 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 200.66 82.55 90)
+		(at 200.66 82.55 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b19bdf6e-c0d2-4172-943d-b60a95c7fb13")
+		(uuid "c298d943-2089-4f06-bd38-bbd798d02856")
 		(property "Reference" "C14"
-			(at 205.994 82.55 90)
+			(at 206.756 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6887,7 +7556,7 @@
 			)
 		)
 		(property "Value" "100p"
-			(at 211.836 82.55 90)
+			(at 211.836 82.296 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6912,7 +7581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 200.66 82.55 0)
 			(effects
 				(font
@@ -6921,14 +7590,41 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 200.66 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CC0603FRNPO9BN101"
+			(at 200.66 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3599-1-ND"
+			(at 200.66 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "6145bda1-a777-43b1-8b1a-18e64508d3a6")
+			(uuid "31184aa0-8999-4609-b701-bbabe7d787bd")
 		)
 		(pin "2"
-			(uuid "0aec8f72-c1a4-4104-aaaf-c0a0e8980731")
+			(uuid "5d6c053d-afd4-4059-9de1-309b7d153967")
 		)
 		(instances
-			(project "LNA-2W"
+			(project "PA-2W for sxceiver"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "C14")
 					(unit 1)
@@ -6938,7 +7634,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 233.68 114.3 0)
+		(at 260.35 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6947,7 +7643,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2de168e-cca4-43e0-9fd9-81c59733a0ae")
 		(property "Reference" "J2"
-			(at 237.49 113.3231 0)
+			(at 264.16 113.3231 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6956,7 +7652,7 @@
 			)
 		)
 		(property "Value" "SMA_RF OUT"
-			(at 237.49 115.8631 0)
+			(at 264.16 115.8631 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6965,7 +7661,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Connector:SMA_Edge_6.3mm"
-			(at 233.68 114.3 0)
+			(at 260.35 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6974,7 +7670,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 114.3 0)
+			(at 260.35 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6983,7 +7679,34 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 233.68 114.3 0)
+			(at 260.35 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " "RF Solutions"
+			(at 260.35 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CON-SMA-EDGE-S"
+			(at 260.35 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "CON-SMA-EDGE-S-ND"
+			(at 260.35 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7059,8 +7782,8 @@
 				(hide yes)
 			)
 		)
-		(property "PN" ""
-			(at 54.61 115.57 0)
+		(property "Manufacturer" "YAGEO"
+			(at 54.61 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7068,8 +7791,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 54.61 115.57 0)
+		(property "Manufacturer Product Number" "CC0603FRNPO9BN101"
+			(at 54.61 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "311-3599-1-ND"
+			(at 54.61 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7147,6 +7879,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "RF Solutions"
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CON-SMA-EDGE-S"
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "CON-SMA-EDGE-S-ND"
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2025ce8b-8d22-40a5-8456-0919ddbbf928")
 		)
@@ -7157,178 +7916,6 @@
 			(project ""
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 74.93 58.42 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c8495867-8c09-4e67-85f9-cc3a4234fbdb")
-		(property "Reference" "C19"
-			(at 72.644 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1u"
-			(at 70.612 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9f239914-e1c6-4b08-acba-75ac7b3962be")
-		)
-		(pin "2"
-			(uuid "4ace72c8-4c2d-4096-9ff4-e0c7593df46a")
-		)
-		(instances
-			(project "PA-2W for sxceiver"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 87.63 91.44 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cc27add4-f324-4c5f-adec-6e5cd7ac15aa")
-		(property "Reference" "C2"
-			(at 92.964 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100p"
-			(at 98.552 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 87.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 87.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 87.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 87.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 87.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0a938d8a-1b92-4d28-a2d6-944730fa6f43")
-		)
-		(pin "2"
-			(uuid "82825794-5ad2-4a32-9270-52e160d90a60")
-		)
-		(instances
-			(project "SX1255 HLA 2W"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -7519,6 +8106,51 @@
 				(hide yes)
 			)
 		)
+		(property "Q min" "49.3"
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current" "600 mA"
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "LQW18AS68NG0ZD"
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "490-15846-1-ND"
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4055b246-0c48-477b-a59b-24be8887f080")
 		)
@@ -7529,76 +8161,6 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 90.17 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df67cb56-45d8-4487-ae16-398b772e4d53")
-		(property "Reference" "L1"
-			(at 91.44 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "68n"
-			(at 91.44 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 90.17 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 90.17 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 90.17 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8378b53-e0ec-48f4-bf58-69f44f66c37e")
-		)
-		(pin "2"
-			(uuid "67d93c76-bd29-4397-86d7-b3e3c4bf699e")
-		)
-		(instances
-			(project "SX1255 HLA 2W"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -7657,6 +8219,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 59.69 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "5442206"
+			(at 59.69 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "277-12547-ND"
+			(at 59.69 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f7ede811-b657-4da0-ae25-c0e8d3786036")
 		)
@@ -7690,7 +8279,7 @@
 			)
 		)
 		(property "Value" "120 ohm/100MHz"
-			(at 92.964 55.88 90)
+			(at 90.17 53.848 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7733,6 +8322,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Laird-Signal Integrity Products"
+			(at 90.17 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "LI1206H121R-10"
+			(at 90.17 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "240-2401-1-ND"
+			(at 90.17 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1eb42c05-6075-4c7e-8a8c-25dd26aa1f83")
 		)
@@ -7743,6 +8359,121 @@
 			(project "PA-2W for sxceiver"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 90.17 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6288f23-91c7-49ba-8c88-cf0bab18fe22")
+		(property "Reference" "L1"
+			(at 91.44 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "68n"
+			(at 91.44 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 90.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor, small symbol"
+			(at 90.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Q min" "49.3"
+			(at 90.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current" "600 mA"
+			(at 90.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 90.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "LQW18AS68NG0ZD"
+			(at 90.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "490-15846-1-ND"
+			(at 90.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a9c962b-6146-4f98-9fa5-ced0a4eb6859")
+		)
+		(pin "2"
+			(uuid "b17b6dce-2425-41bd-975a-11034b389f0d")
+		)
+		(instances
+			(project "PA-2W for sxceiver"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -7878,7 +8609,7 @@
 	)
 	(symbol
 		(lib_id "PCM_4ms_Power-symbol:GND")
-		(at 233.68 123.19 0)
+		(at 260.35 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7887,7 +8618,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5c62360-7cf0-46cc-acab-cf7d0de9cf1f")
 		(property "Reference" "#PWR04"
-			(at 233.68 129.54 0)
+			(at 260.35 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7896,7 +8627,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 233.68 128.27 0)
+			(at 260.35 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7904,7 +8635,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 123.19 0)
+			(at 260.35 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7913,7 +8644,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 123.19 0)
+			(at 260.35 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7922,7 +8653,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 123.19 0)
+			(at 260.35 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7937,72 +8668,6 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 74.93 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9520782-83f9-4aef-9962-8745d2ab39be")
-		(property "Reference" "#PWR018"
-			(at 74.93 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 74.93 68.9031 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 74.93 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46b90277-fe0d-4dd2-9631-1224bcc3318f")
-		)
-		(instances
-			(project "PA-2W for sxceiver"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -8069,73 +8734,6 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 198.12 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fbfdc49b-cecf-42fa-ba31-a5ee5f767ca2")
-		(property "Reference" "C10"
-			(at 192.786 119.38 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "8p2"
-			(at 195.072 119.38 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 198.12 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 198.12 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 198.12 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0be3603c-8f58-480a-be39-9aff7446e6ed")
-		)
-		(pin "2"
-			(uuid "3330a3da-6799-4b01-9378-254b6885b959")
-		)
-		(instances
-			(project "LNA-2W"
-				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
-					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -8253,6 +8851,33 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 200.66 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 200.66 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "GRM1885C1H102JA01D"
+			(at 200.66 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "490-1451-1-ND"
+			(at 200.66 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
