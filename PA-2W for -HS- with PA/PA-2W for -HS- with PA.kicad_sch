@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "PA 2W for HS wit PA onboard")
-		(date "2026-04-12")
-		(rev "V2.4")
+		(date "2026-04-14")
+		(rev "V2.5")
 		(company "Z32IT")
 	)
 	(lib_symbols
@@ -2633,6 +2633,18 @@
 		(uuid "18d46532-c738-4c0b-b1a3-7f4f25755bac")
 	)
 	(junction
+		(at 181.61 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "304d51be-575f-44ea-86f3-41690c07ad65")
+	)
+	(junction
+		(at 139.7 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31987863-00eb-44ba-9037-ea2291163267")
+	)
+	(junction
 		(at 181.61 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2643,12 +2655,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "433310a1-e27b-4d64-9712-29bff349960f")
-	)
-	(junction
-		(at 139.7 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "472f18dc-1085-4c99-9d42-444865b3cb26")
 	)
 	(junction
 		(at 113.03 115.57)
@@ -2735,12 +2741,6 @@
 		(uuid "bb4c5dde-804d-42be-8239-ad576e8f2880")
 	)
 	(junction
-		(at 181.61 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9bf44f7-b1ab-478f-bab8-bc75d2fd149f")
-	)
-	(junction
 		(at 118.11 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2754,23 +2754,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 73.66) (xy 181.61 73.66)
+			(xy 113.03 73.66) (xy 139.7 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "00de54b0-8632-4ac7-bd95-a5d8ca3e1040")
-	)
-	(wire
-		(pts
-			(xy 181.61 73.66) (xy 198.12 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01f26f97-19de-46e6-82e5-9f4b51ab7dd6")
 	)
 	(wire
 		(pts
@@ -2794,6 +2784,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 73.66) (xy 181.61 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "075033f9-d146-4591-8c11-8efcfd1f5931")
+	)
+	(wire
+		(pts
 			(xy 198.12 96.52) (xy 198.12 102.87)
 		)
 		(stroke
@@ -2811,6 +2811,16 @@
 			(type default)
 		)
 		(uuid "0e309204-3cab-427a-826e-a9629fd5db1c")
+	)
+	(wire
+		(pts
+			(xy 181.61 73.66) (xy 198.12 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "161891f6-d4a3-4d7a-8ace-5a5df66265b2")
 	)
 	(wire
 		(pts
@@ -2924,6 +2934,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 81.28) (xy 181.61 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b22660-82c4-4048-91d5-298ed64809ac")
+	)
+	(wire
+		(pts
 			(xy 86.36 73.66) (xy 93.98 73.66)
 		)
 		(stroke
@@ -2994,16 +3014,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 73.66) (xy 139.7 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6179a9e6-d3fc-4ea2-bbe0-e55d58beb3ca")
-	)
-	(wire
-		(pts
 			(xy 198.12 114.3) (xy 203.2 114.3)
 		)
 		(stroke
@@ -3041,6 +3051,16 @@
 			(type default)
 		)
 		(uuid "7677901a-18af-41be-9ba2-3dae501f0949")
+	)
+	(wire
+		(pts
+			(xy 139.7 81.28) (xy 139.7 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a4a363-e324-4cf7-a471-6dcc4160b963")
 	)
 	(wire
 		(pts
@@ -3224,6 +3244,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 76.2) (xy 139.7 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9109533-cebe-49ce-b0ed-35498b5adecf")
+	)
+	(wire
+		(pts
 			(xy 179.07 100.33) (xy 181.61 100.33)
 		)
 		(stroke
@@ -3294,23 +3324,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 85.09) (xy 139.7 73.66)
+			(xy 139.7 73.66) (xy 181.61 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc5b2557-d3aa-419d-ae09-20c11c9c947e")
-	)
-	(wire
-		(pts
-			(xy 181.61 73.66) (xy 181.61 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bddfacb2-0629-4994-9f0b-a4f80a78984d")
+		(uuid "bf7b49bd-6541-4253-b0ab-746a7c08f50d")
 	)
 	(wire
 		(pts
@@ -3702,6 +3722,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 181.61 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06eeb103-0b39-43ce-b2c7-8344b92982a9")
+		(property "Reference" "R6"
+			(at 184.15 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10R"
+			(at 184.15 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metri"
+			(at 181.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 181.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 181.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CRCW0603280RFKEA"
+			(at 181.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-280HCT-ND"
+			(at 181.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "655b461f-1690-4e19-a2d7-3a60df3f833e")
+		)
+		(pin "2"
+			(uuid "b9eb059c-752c-4dcf-85c5-3f51e3fe3d0f")
+		)
+		(instances
+			(project "PA-2W for -HS- with PA"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_4ms_Power-symbol:GND")
 		(at 181.61 130.81 0)
 		(unit 1)
@@ -3920,7 +4037,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "280R"
+		(property "Value" "270R"
 			(at 184.15 88.8999 0)
 			(effects
 				(font
@@ -4081,7 +4198,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "280R"
+		(property "Value" "270R"
 			(at 142.24 88.8999 0)
 			(effects
 				(font
@@ -4552,6 +4669,103 @@
 			(project "LNA-2W"
 				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 139.7 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47176360-adde-4e6f-9170-ecfbaaaac773")
+		(property "Reference" "R5"
+			(at 142.24 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10R"
+			(at 142.24 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "CRCW0603280RFKEA"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-280HCT-ND"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d24f665-6ca4-4966-81b2-e532f432e159")
+		)
+		(pin "2"
+			(uuid "e36621fd-9a87-4dc1-96d4-ce6d849742a3")
+		)
+		(instances
+			(project "PA-2W for -HS- with PA"
+				(path "/9e841ece-bd19-4cb2-9a9c-7f7db9f00b2a"
+					(reference "R5")
 					(unit 1)
 				)
 			)
